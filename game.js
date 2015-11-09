@@ -42,8 +42,23 @@ var guess5 = prompt("Do I like Game of Thrones?");
 guess5 = guess5.toLowerCase();
 if(guess5 === "yes" || guess5 === "y") {
 	console.log("Guess 5 is: " + guess5);
-  alert("You guessed " + guess5 + "! You were right :) I do not have a brother, I actually have a sister!");
+  alert("You guessed " + guess5 + "! You were right :) I LOVE Game of Thrones!");
 } else {
 	console.log("Guess 5 is: " + guess5);
-	alert("You guessed " + guess5 + ". You were wrong :( I do not have a brother, I actually have a sister!");
+	alert("You guessed " + guess5 + ". You were wrong :( I LOVE Game of Thrones!");
+}
+
+var rating = prompt("How much did you enjoy this game on a scale from 1-10");
+if(0 < rating && rating < 11) {
+	console.log("Rating is a valid value.");
+	if(rating > 5) {
+		console.log("Rating was " + rating + ".");
+		alert("You rated the game " + rating + ". I'm glad you liked the game!");
+	} else {
+		console.log("Rating was " + rating + ".");
+		alert("You rated the game " + rating + ". I'm sorry you didn't like the game!");
+	}
+} else {
+	console.log("Rating is not a valid value.");
+	alert("Your rating was not a valid value!");
 }
