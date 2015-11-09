@@ -27,3 +27,23 @@ if(guess3 === "no" || guess3 === "n") {
 	console.log("Guess 3 is: " + guess3);
 	alert("You guessed " + guess3 + ". You were wrong :( I am actually 26.");
 }
+
+var guess4 = prompt("Do I have a brother?");
+guess4 = guess4.toLowerCase();
+if(guess4 === "no" || guess4 === "n") {
+	console.log("Guess 4 is: " + guess4);
+  alert("You guessed " + guess4 + "! You were right :) I do not have a brother, I actually have a sister!");
+} else {
+	console.log("Guess 4 is: " + guess4);
+	alert("You guessed " + guess4 + ". You were wrong :( I do not have a brother, I actually have a sister!");
+}
+
+var guess5 = prompt("Do I like Game of Thrones?");
+guess5 = guess5.toLowerCase();
+if(guess5 === "yes" || guess5 === "y") {
+	console.log("Guess 5 is: " + guess5);
+  alert("You guessed " + guess5 + "! You were right :) I do not have a brother, I actually have a sister!");
+} else {
+	console.log("Guess 5 is: " + guess5);
+	alert("You guessed " + guess5 + ". You were wrong :( I do not have a brother, I actually have a sister!");
+}
