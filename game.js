@@ -48,7 +48,7 @@ if(guess5 === "yes" || guess5 === "y") {
 	alert("You guessed " + guess5 + ". You were wrong :( I LOVE Game of Thrones!");
 }
 
-var rating = prompt("How much did you enjoy this game on a scale from 1-10");
+var rating = prompt("How much did you enjoy this game on a scale from 1 (hated it) to 10 (loved it)?");
 if(0 < rating && rating < 11) {
 	console.log("Rating is a valid value.");
 	if(rating > 5) {
